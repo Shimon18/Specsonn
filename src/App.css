@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.iris_product_detail_container{
+  background-color: white;
+}
+.iris_product_info{
+  text-align: left;
+}
+.iris_product_id{
+ font-weight: 600;
+ font-size: 23px;
+}
+.iris_product_title span{
+ font-weight: 500;
+ font-size: 17px;
+}
+.iris_product_rating ul li{
+  font-size: 13px;
+}
+.iris_ratings_like{
+  display: flex;
+  align-items: center;
+  display: inline-block;
+  margin: 12px auto 15px;
+  padding: 8px 15px 8px 14px;
+  color: #ff8a00;
+  font-size: 14px;
+  letter-spacing: .2pt;
+  text-align: center;
+  border-radius: 25px;
+  background-color: rgba(255,138,0,.12);
+}
+.iris_price span{
+
+  font-size: 22px !important; 
+}
+.iris_product_discount_price p{
+  font-size: 15px;
+  margin-left: 10px;
+}
+.iris_product_discount_price span{
+  font-size: 15px !important;
+}
+.iris_select_size{
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.iris_select_size p{
+  color: #fff;
+  background-color: #d39d4e;
+  border-color: #d39d4e;
+  margin-right: 8px;
+  width: 47px;
+  height: 30px;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  vertical-align: middle;
+  line-height: 28px;
+  border-radius: 3px;
+} 
+.iris_select_size a{
+  font-size: 14px;
+  text-decoration: underline !important;
+  color: black;
+}
+
+/* custom checkbox */
+/* This css is for normalizing styles. You can skip this. */
+
+
+
+
+
+
+.form-group1 input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.form-group1 label {
+  position: relative;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+
+.form-group1 label:before {
+  content:'';
+  -webkit-appearance: none;
+  background-color: white;
+  border: 1.5px solid black;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.form-group1 input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #d39d4e;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.chat-bubble {
+  position: relative;
+  display: inline-block;
+  margin-top: 16px;
+  padding: 8.5px 20px 8.5px 11px;
+  font-size: 14px;
+  font-weight: 400;
+  background: #ffe5b8;
+  border-radius: 3px;
+}
+
+.chat-bubble:before {
+  content: "";
+    position: absolute;
+    top: -10px;
+    left: 12px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #ffe5b8;
+}
+.iris_addbtn{
+  width: calc(100% - 74px);
+    height: 52px;
+    font-size: 18px;
+    display: inline-block;
+    margin: 0;
+    padding: 9px 20px;
+    color: #fff;
+    line-height: 1.3;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    border: 1px solid #d39d4e;
+    border-radius: 6px;
+    background-color: #d39d4e;
+    margin-right: 10px;
+}
+.iris_wishlistbtn{
+  float: right;
+    width: 61px;
+    height: 52px;
+    cursor: pointer;
+    background-color: white;
+    border:1px solid black;
+    border-radius: 6px;
+    transition: .2s;
+}
+.iris_wishlistbtn:hover{
+  border:1px solid #d39d4e;
+  color: #d39d4e;
+  transition: .2s;
+}
+.iris_wishlist i{
+  display: block;
+  width: 100%;
+  padding-left: 0;
+  height: 52px;
+  padding: 0 18px;
+  line-height: 50px;
+  font-size: 24px;
+  overflow: hidden;
+  -webkit-transition: all .25s ease-out;
+  transition: all .25s ease-out;
+  border-radius: 5px;
+  color: #000;
+  border: 1px solid #000;
+}
+.product_returntag{
+  display: flex;
+  align-items: center;
+}
+.product_returntag p{
+  font-size: 14px;
+  letter-spacing: .3pt;
+  line-height: 1.4;
+  margin-right: 5px;
+  font-family: 'Roboto', sans-serif !important;
+
+}
+.product_returntag i:hover{
+  color: #d39d4e;
+}
+.product_lastinfotext{
+  color: #d39d4e;
+  text-decoration: underline;
+  font-family: 'Roboto', sans-serif !important;
+ margin-top: 10px;
+ font-size: 14px;
+}
+.thumb-container{
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+}
+.iris_product_detail_social{
+  margin: 20px 0 !important;
+  text-align: center;
+}
+
+.iris_buyhead{
+  font-size: 14px;
+    margin-top: 0px;
+    color: #333;
+    font-family: 'Product Sans';
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.left_irisbuydiv{
+  height: 128px;
+  padding: 20px;
+}
+p.deliveryTxt {
+  font-size: 15px !important;
+  margin-top: 5px;
+  color: #333;
+  font-family: 'Product Sans';
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.delivery_box{
+padding-left: 50px;
+    margin-top: -87px;
+}
+.iris_price{
+  margin: 10px 0;
+}
+.iris_product_action .types-list {
+  padding: 15px 5px;
+}
+.iris_product_action .types-list li{
+  padding: 10px 5px ;
+}

@@ -1,0 +1,12 @@
+
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   /* padding: 50px;*/
+    flex-direction: column;
+}
+
+.block img{ width:70%;}
